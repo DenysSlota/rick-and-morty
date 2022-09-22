@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.list__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.list__container a {
+    display: block;
+    margin: 0 10px;
+    padding: 7px 10px;
+    min-width: 70px;
+    border: 2px solid transparent;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.list__container a:hover {
+    color: rgb(255, 152, 0);
+}
+
+.list__container :global(a.active) {
+    border: 2px solid rgb(255, 152, 0);
+    border-radius: 6px;
+    color: rgb(255, 152, 0);
+}
